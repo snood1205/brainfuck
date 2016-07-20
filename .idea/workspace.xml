@@ -11,12 +11,7 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc5940de-2ffb-4a9c-a9e4-d558e60dd807" name="Default" comment="Added documentation">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/brainfuck.c" afterPath="$PROJECT_DIR$/brainfuck.c" />
-    </list>
+    <list default="true" id="bc5940de-2ffb-4a9c-a9e4-d558e60dd807" name="Default" comment="Added documentation" />
     <ignored path="brainfuck.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +34,8 @@
       <file leaf-file-name="brainfuck.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brainfuck.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="150">
+              <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -423,8 +418,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brainfuck.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="10" column="39" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
           <folding />
         </state>
       </provider>
