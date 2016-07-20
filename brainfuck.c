@@ -39,7 +39,7 @@ int main() {
     /////////////////////////////////////////////////////////////////////////////
     // This method is the main method for the program.                         //
     /////////////////////////////////////////////////////////////////////////////
-    
+
     parse();
     return 0;
 }
@@ -55,6 +55,7 @@ void initialize() {
         cells[pointer] = 0;
     }
     pointer = 0;
+    printf("$ ");
 }
 
 void execute(char a) {
@@ -91,7 +92,7 @@ void execute(char a) {
     } else if (a == ']') {
         backward();
     } else if (a == '\n') {
-        printf("\n> ");
+        printf("\n$ ");
     }
 }
 
