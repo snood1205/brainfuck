@@ -81,5 +81,5 @@ SOFTWARE.
 
 Contact:
 -----------------------------
-Author: Eli Sadoff
+Author: Eli Sadoff </br>
 Email: snood1205@gmail.com
