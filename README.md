@@ -10,13 +10,13 @@ and does not yet compile brainfuck files.
 Installation:
 -----------------------------
 1. Download the git repository from github using these steps:
-    * git clone git@github.com:snood1205/brainfuck.git
+    * `git clone git@github.com:snood1205/brainfuck.git`
 2. Change into the repository
-    * cd brainfuck
+    * `cd brainfuck`
 3. Compile the program
-    * make brainfuck
+    * `make brainfuck`
 4. Run the REPL
-    * ./brainfuck
+    * `./brainfuck`
 
 Usage:
 -----------------------------
@@ -24,23 +24,25 @@ Once the REPL is running you can use the following 8 commands which make up
 any brainfuck program. A brainfuck program, for all intents and purposes,
 is compromised of an array of at least 30,000 byte sized cells. Each cell
 is initialized to 0 and the pointer is pointed to the first cell.
+
 Commands:
-    * '+' -> Increments the value of the cell being pointed to.
-    * '-' -> Decrements the value of the cell being pointed to.
-    * '>' -> Points to the next cell.
-    * '<' -> Points to the previous cell.
-    * '.' -> Outputs the ASCII value of the current cell.
-    * ',' -> Sets the value of the cell being pointed to, to the ASCII
-    value inputted.
-    * '[' -> Creates a while loop and executes what is within the braces
-    until the value of the cell being pointed to has the value 0.
-    * ']' -> Closes the while loop.
+* `+` &rarr; Increments the value of the cell being pointed to.
+* `-` &rarr; Decrements the value of the cell being pointed to.
+* `>` &rarr; Points to the next cell.
+* `<` &rarr; Points to the previous cell.
+* `.` &rarr; Outputs the ASCII value of the current cell.
+* `,` &rarr; Sets the value of the cell being pointed to, to the ASCII
+value inputted.
+* `[` &rarr; Creates a while loop and executes what is within the braces
+until the value of the cell being pointed to has the value 0.
+* `]` &rarr; Closes the while loop.
 
 The prompt is '$'.
 
 Example:
 -----------------------------
 Hello World:
+```brainfuck
 $ ++>++++++++++[<+++++++>-]
 $ +>++++++++++[<++++++++++>-]
 $ ++++++++>++++++++++[<++++++++++>-]
@@ -54,7 +56,7 @@ $ ++++++++>++++++++++[<++++++++++>-]
 $ >++++++++++[<++++++++++>-]
 $ <<<<<<<<<<<<
 $ >.>.>.>.>.>.>.>.>.>.
-
+```
 License:
 -----------------------------
 Copyright (c) 2016 Eli David Sadoff
