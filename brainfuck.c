@@ -39,11 +39,18 @@ int main() {
     /////////////////////////////////////////////////////////////////////////////
     // This method is the main method for the program.                         //
     /////////////////////////////////////////////////////////////////////////////
+    
     parse();
     return 0;
 }
 
 void initialize() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This method initializes the array cells of constant #SIZE and sets the  //
+    // value of each cell to 0. Additionally it sets the the value of pointer  //
+    // to 0.                                                                   //
+    /////////////////////////////////////////////////////////////////////////////
+
     for (pointer = 0; pointer < SIZE; pointer++) {
         cells[pointer] = 0;
     }
@@ -51,6 +58,22 @@ void initialize() {
 }
 
 void execute(char a) {
+    /////////////////////////////////////////////////////////////////////////////
+    // This method executes each character provided to it:                     //
+    // - '>' -> increments the pointer by 1                                    //
+    // - '<' -> decrements the pointer by 1                                    //
+    // - '+' -> increments the value of the cell pointed to by 1               //
+    // - '-' -> decrements the value of the cell pointed to by 1               //
+    // - '.' -> outputs the ASCII char value of the cell                       //
+    // - ',' -> accepts one ASCII char value of input                          //
+    // - '[' -> creates a while loop, runs what is inside '[]' until the value //
+    // of the cell pointed to is 0                                             //
+    // - ']' -> closing brace of while loop                                    //
+    // - '\n' -> goes to the next line                                         //
+    // Parameter:                                                              //
+    // - a (char) -> the character to execute                                  //
+    /////////////////////////////////////////////////////////////////////////////
+
     if (a == '>') {
         increment_pointer();
     } else if (a == '<') {
@@ -67,10 +90,17 @@ void execute(char a) {
         forward();
     } else if (a == ']') {
         backward();
+    } else if (a == '\n') {
+        printf("\n> ");
     }
 }
 
 void parse() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This parses the input and runs a while loop until the program is        //
+    // aborted.                                                                //
+    /////////////////////////////////////////////////////////////////////////////
+
     initialize();
     char a;
     do {
@@ -80,30 +110,62 @@ void parse() {
 }
 
 void increment_pointer() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This increments the pointer by 1. This means that the cell that is      //
+    // being pointed to is moved forward.                                      //
+    /////////////////////////////////////////////////////////////////////////////
+
     pointer++;
 }
 
 void decrement_pointer() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This decrements the pointer by 1. This means that the cell that is      //
+    // being pointed to is moved backwards.                                    //
+    /////////////////////////////////////////////////////////////////////////////
+
     pointer--;
 }
 
 void increment_cell() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This increments the value of the cell by 1.                             //
+    /////////////////////////////////////////////////////////////////////////////
+
     cells[pointer]++;
 }
 
 void decrement_cell() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This decrements the value of the cell by 1.                             //
+    /////////////////////////////////////////////////////////////////////////////
+
     cells[pointer]--;
 }
 
 void output() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This prints the ASCII char value of the cell being pointed to.          //
+    /////////////////////////////////////////////////////////////////////////////
+
     printf("%c", cells[pointer]);
 }
 
 void input() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This set the value of the cell being pointed to as the ASCII char       //
+    // input.                                                                  //
+    /////////////////////////////////////////////////////////////////////////////
+
     scanf("%c", & cells[pointer]);
 }
 
 void forward() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This creates a while loop, which runs until the cell being pointed to   //
+    // has a value of 0.                                                       //
+    /////////////////////////////////////////////////////////////////////////////
+
     static char buffer[SIZE];
     int i, p, max;
     char a;
@@ -125,5 +187,9 @@ void forward() {
 
 
 void backward() {
+    /////////////////////////////////////////////////////////////////////////////
+    // This has no function, but exists just to exist.                         //
+    /////////////////////////////////////////////////////////////////////////////
+
     ;
 }
